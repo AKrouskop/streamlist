@@ -1,0 +1,71 @@
+.streamlist-container {
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.streamlist {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.streamlist li {
+  background-color: #f0f0f0;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.streamlist li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.actions img {
+  width: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+  filter: brightness(0.7); /* makes icon darker */
+  transition: filter 0.3s ease;
+}
+
+.actions img:hover {
+  filter: brightness(0.1);
+}
+@media (max-width: 500px) {
+  .streamlist-container {
+    padding: 20px;
+  }
+
+  .actions img {
+    width: 18px;
+    padding: 2px;
+  }
+}
