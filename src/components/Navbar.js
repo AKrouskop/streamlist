@@ -5,6 +5,7 @@ import homeIcon from './Logos/home.png';
 import movieIcon from './Logos/movie.png';
 import cartIcon from './Logos/shopping_cart.png';
 import menuIcon from './Logos/menu.png';
+import searchIcon from '../components/Logos/search.png';
 
 function Navbar() {
   return (

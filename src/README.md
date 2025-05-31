@@ -1,52 +1,56 @@
-# StreamList React App
+# StreamList – React Movie Search & Task App
 
-**StreamList** is a React-based Progressive Web Application designed to help users track movies and shows they want to watch. This project is being developed as part of the INT 499 Capstone course at the University of Arizona Global Campus.
+Welcome to **StreamList**, a React-based web application developed for the INT 499 Capstone Project at the University of Arizona Global Campus. This app allows users to manage their streaming wish list while also searching for movies using live data from the TMDB API.
 
 ---
 
-## Features
+## Features Implemented (Weeks 1–3)
 
-- Add movies and shows to a visual list
-- Edit existing entries with ease
-- Mark items as **completed** (strike-through effect and visual cues)
-- Delete items from the list
-- Clear input automatically after submission
-- Responsive and user-friendly layout
-- Icon-based UI using assets from Google Fonts and Material Icons
-- Navigation bar with routing to:
-  - Home
-  - Movies
+### Week 1: App Foundation
+- Set up using **React Router** for page navigation.
+- Created core pages:
+  - Home (StreamList input)
+  - Movies (now powered by TMDB API)
   - Cart
   - About
+- Custom **Google Fonts icons** used for nav styling.
+- StreamList form component accepts user input and logs it to the console.
+- GitHub and ScreenPal video demo created.
+
+### Week 2: Interactive Task List
+- Added full task list functionality:
+  - Add, edit, complete, and delete tasks.
+  - Input clears after submission.
+- State-driven list rendering using `useState`.
+- Seamless component structure with icon-based task controls.
+- Improved CSS layout and button interactivity.
+
+### Week 3: API Integration + Data Persistence
+- Replaced placeholder **Movies** page with a fully functional movie search interface using the **TMDB API**.
+- Users can:
+  - Search by movie title
+  - View results with poster, title, release date, and overview
+- Implemented **localStorage** to persist search results across page reloads.
+- Added a **“Clear Results”** button to reset the search state.
+- Displays a message when no results are found.
+- Fully centered and polished UI using custom CSS.
 
 ---
 
-## Technologies Used
+## Tech Stack
 
-- React.js (with Hooks)
-- React Router DOM
-- UUID for unique item IDs
-- Google Fonts Icons
-- Custom `.png` icons for list actions
-- CSS for styling and responsive design
-
----
-
-## File Structure
-
-- `App.js`: Main app routing logic
-- `StreamList.js`: Core functionality for list input/display
-- `Navbar.js`: Navigation component with icons
-- `Logos/`: Folder containing `.png` icon assets
-- `StreamList.css` & `Navbar.css`: Component-level styling
+- **React** (Create React App)
+- **React Router DOM**
+- **TMDB API** (The Movie Database)
+- **JavaScript (ES6+)**
+- **CSS (custom, no framework)**
+- **localStorage**
 
 ---
 
 ## Getting Started
 
-To run this project locally:
-
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AKrouskop/streamlist.git
+   git clone https://github.com/your-username/streamlist.git
    cd streamlist
