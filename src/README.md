@@ -1,56 +1,57 @@
-# StreamList – React Movie Search & Task App
+# StreamList
 
-Welcome to **StreamList**, a React-based web application developed for the INT 499 Capstone Project at the University of Arizona Global Campus. This app allows users to manage their streaming wish list while also searching for movies using live data from the TMDB API.
+StreamList is a responsive movie browsing web application developed as part of the Week 4 deliverables for the **INT 499 Information Technology Capstone Course** at the University of Arizona Global Campus.
 
----
-
-## Features Implemented (Weeks 1–3)
-
-### Week 1: App Foundation
-- Set up using **React Router** for page navigation.
-- Created core pages:
-  - Home (StreamList input)
-  - Movies (now powered by TMDB API)
-  - Cart
-  - About
-- Custom **Google Fonts icons** used for nav styling.
-- StreamList form component accepts user input and logs it to the console.
-- GitHub and ScreenPal video demo created.
-
-### Week 2: Interactive Task List
-- Added full task list functionality:
-  - Add, edit, complete, and delete tasks.
-  - Input clears after submission.
-- State-driven list rendering using `useState`.
-- Seamless component structure with icon-based task controls.
-- Improved CSS layout and button interactivity.
-
-### Week 3: API Integration + Data Persistence
-- Replaced placeholder **Movies** page with a fully functional movie search interface using the **TMDB API**.
-- Users can:
-  - Search by movie title
-  - View results with poster, title, release date, and overview
-- Implemented **localStorage** to persist search results across page reloads.
-- Added a **“Clear Results”** button to reset the search state.
-- Displays a message when no results are found.
-- Fully centered and polished UI using custom CSS.
+This project allows users to search for movies using **The Movie Database (TMDB) API**, view detailed information, and manage a simple shopping cart simulation. The application showcases frontend development with **React**, **React Router**, and custom **CSS**, along with persistent cart data using `localStorage`.
 
 ---
 
-## Tech Stack
+## Features
 
-- **React** (Create React App)
+- **Movie Search** – Search for titles using the TMDB API.
+- **Movie Cards** – View results in clean, responsive cards with posters, summaries, and release dates.
+- **Add to Cart** – Add any movie to a virtual cart with real-time updates.
+- **Live Cart Badge** – A red badge on the cart icon reflects the number of selected movies.
+- **Checkout Simulation** – Clear the cart with a success message on checkout.
+- **AI-Assisted Refinement** – Code was reviewed and refined using CodeGPT inside Visual Studio Code.
+- **Navigation** – Navigate between Home, Movies, Cart, and About pages via a styled navbar.
+- **Persistence** – Cart items are saved across sessions using `localStorage`.
+
+---
+
+## Technologies Used
+
+- **React** (Functional Components + Hooks)
 - **React Router DOM**
+- **Custom CSS**
 - **TMDB API** (The Movie Database)
-- **JavaScript (ES6+)**
-- **CSS (custom, no framework)**
-- **localStorage**
+- **localStorage** (for cart persistence)
+- **CodeGPT** (used for testing and improvement)
+- **ScreenPal** (for demo recording)
 
 ---
 
-## Getting Started
+## CodeGPT Integration
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/streamlist.git
-   cd streamlist
+During Week 4, the application was tested and refined using **CodeGPT** inside Visual Studio Code. Suggestions included:
+
+- Wrapping the TMDB API call in a `try/catch` block to handle errors
+- Adding a loading state and error feedback for better user experience
+- Cleaning up state initialization and removing redundant localStorage updates
+
+These changes were reviewed, implemented, and tested to ensure functionality remained stable.
+
+---
+
+## About Page Content
+
+The app includes an About page summarizing:
+- The goal of the project
+- Technologies used
+- Course context (INT 499 Capstone)
+- AI testing contributions
+
+---
+
+## Folder Structure
+
